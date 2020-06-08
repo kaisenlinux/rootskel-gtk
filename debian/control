@@ -1,0 +1,13 @@
+Source: rootskel-gtk
+Section: debian-installer
+Priority: optional
+XSBC-Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>
+Build-Depends: debhelper (>= 9), dpkg-dev, librsvg2-bin
+
+Package: rootskel-gtk
+Package-Type: udeb
+Architecture: any
+Depends: ${misc:Depends}, rootskel
+Description: Additions for graphical installs to skeleton root filesystem (debian-installer)

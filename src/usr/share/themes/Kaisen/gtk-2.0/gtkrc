@@ -1,0 +1,174 @@
+style "kaisen-default"
+{
+	GtkButton	::default_border	= { 0, 0, 0, 0 }
+	GtkRange	::trough_border		= 0
+	GtkPaned	::handle_size		= 6
+	GtkRange	::slider_width		= 15
+	GtkRange	::stepper_size		= 15
+
+	GtkScrollbar	::min_slider_length	= 30
+	GtkCheckButton	::indicator_size	= 14
+	GtkMenuBar	::internal-padding	= 0
+	GtkTreeView	::expander_size		= 14
+	GtkExpander	::expander_size		= 16
+	GtkScale	::slider-length		= 27
+
+	GtkButton	::child-displacement-x = 1
+	GtkButton	::child-displacement-y = 1
+
+	WnckTasklist	::fade-overlay-rect = 0
+
+	xthickness = 1
+	ythickness = 1
+
+	fg[NORMAL]		= "#B5B3AC" # Couleur texte non modifiable gris/blanc (boutons et textes)
+	fg[PRELIGHT]		= "#EC0101" # Couleur scrolling barre rouge et présélection (Kaisen-Dark-Material)
+	fg[SELECTED]		= "#0E0E10" # Couleur gris/noire sur champ d'écriture
+	fg[ACTIVE]		= "#8F1715" # Couleur rouge de surbrillance (appui sur tab, rouge Kaisen-Dark-Material)
+	fg[INSENSITIVE]		= "#0E0E10" # Couleur gris/noir sur champ de sélection (champ de sélection de langue)
+
+	bg[NORMAL]		= "#0E0E10" # Couleur de fond grise/noire
+	bg[PRELIGHT]		= "#EC0101" # Couleur rouge barre progression rouge (Kaisen-Dark-Material)
+	bg[SELECTED]		= "#8F1715" # Couleur de sélection de texte rouge (Kaisen-Official)
+	bg[INSENSITIVE]		= "#8F1715" # Couleur bordure champ d'écriture rouge (Kaisen-Official)
+	bg[ACTIVE]		= "#0E0E10" # Couleur active de fond grise/noire
+
+	base[NORMAL]		= "#0E0E10" # Couleur grise/noire pour champs de sélection (champ de langue par exemple)
+	base[PRELIGHT]		= "#B5B3AC" # Couleur gris/blanc
+	base[ACTIVE]		= "#EC0101" # Elément activé couleur rouge (Kaisen-Dark-Material)
+	base[SELECTED]		= "#8F1715" # Barre sélection couleur rouge (Kaisen-Official)
+	base[INSENSITIVE]	= "#0E0E10" # Couleur gris/noir éléments non modifiables
+
+	text[NORMAL]		= "#B5B3AC" # Fond couleur gris/blanc sur menus sélectionnables 
+	text[PRELIGHT]		= "#B5B3AC" # Texte couleur gris/blanc
+	text[ACTIVE]		= "#B5B3AC" # Texte couleur gris/blanc
+	text[SELECTED]		= "#0E0E10" # Texte couleur noir/gris partie choix de la langue
+	text[INSENSITIVE]	= "#B5B3AC" # Texte blanc/gris
+
+	engine "kaisen"
+	{
+	menubarstyle		= 2	# 0 = flat, 1 = sunken, 2 = flat gradient
+	animation		= FALSE
+	}
+}
+
+style "kaisen-wide" = "kaisen-default"
+{
+	xthickness = 2
+	ythickness = 2
+}
+
+style "kaisen-wider" = "kaisen-default"
+{
+	xthickness = 3
+	ythickness = 3
+}
+
+style "kaisen-button" = "kaisen-wider"
+{
+	bg[NORMAL]	= "#000000"
+	bg[INSENSITIVE]	= "#B5B3AC"
+	bg[PRELIGHT]	= "#000000"
+}
+
+style "kaisen-notebook" = "kaisen-wide"
+{
+	bg[NORMAL]	= "#B5B3AC"
+	bg[INSENSITIVE] = "#B5B3AC"
+}
+
+style "kaisen-tasklist" = "kaisen-default"
+{
+	xthickness = 5
+	ythickness = 3
+}
+
+style "kaisen-menu" = "kaisen-default"
+{
+	xthickness = 2
+	ythickness = 1
+	bg[NORMAL] = "#B5B3AC"
+}
+
+style "kaisen-menubar-item" = "kaisen-button"
+{
+	fg[PRELIGHT] = "#000000"
+}
+
+style "kaisen-menu-item" = "kaisen-default"
+{
+	xthickness	= 2
+	ythickness	= 3
+	fg[PRELIGHT]	= "#ffffff"
+	text[PRELIGHT]	= "#ffffff"
+}
+
+style "kaisen-tree" = "kaisen-default"
+{
+	xthickness = 2
+	ythickness = 2
+}
+
+style "kaisen-frame-title" = "kaisen-default"
+{
+	fg[NORMAL] = "#B5B3AC"
+}
+
+style "kaisen-tooltips" = "kaisen-default"
+{
+	xthickness = 4
+	ythickness = 4
+	bg[NORMAL] = { 1.0,1.0,0.75 }
+}
+
+style "kaisen-progressbar" = "kaisen-wide"
+{
+	xthickness	= 1
+	ythickness	= 1
+	fg[PRELIGHT]	= "#000000"
+}
+
+style "kaisen-combo" = "kaisen-button"
+{
+}
+
+style "kaisen-menubar" = "blackrock-default"
+{
+	bg[NORMAL]	= "#B5B3AC"
+}
+
+# widget styles
+class "GtkWidget"	style "kaisen-default"
+class "GtkButton"	style "kaisen-button"
+class "GtkScale"	style "kaisen-button"
+class "GtkCombo"	style "kaisen-button"
+class "GtkRange"	style "kaisen-wide"
+class "GtkFrame"	style "kaisen-wide"
+class "GtkMenu"		style "kaisen-menu"
+class "GtkEntry"	style "kaisen-wider"
+class "GtkMenuItem"	style "kaisen-menu-item"
+class "GtkNotebook"	style "kaisen-notebook"
+class "GtkProgressBar"	style "kaisen-progressbar"
+
+#class "GtkMenuBar"	style "kaisen-menubar"
+
+widget_class "*MenuItem.*"			style "kaisen-menu-item"
+#widget_class "*.GtkMenuBar.*MenuItem.*"	style "kaisen-menubar-item"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton"		style "kaisen-combo"
+widget_class "*.GtkCombo.GtkButton"		style "kaisen-combo"
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton"	style "kaisen-tasklist"
+widget "gtk-tooltips"				style "kaisen-tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton"		style "kaisen-tree"
+widget_class "*.GtkCTree.GtkButton"		style "kaisen-tree"
+widget_class "*.GtkList.GtkButton"		style "kaisen-tree"
+widget_class "*.GtkCList.GtkButton"		style "kaisen-tree"
+widget_class "*.GtkFrame.GtkLabel"		style "kaisen-frame-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox"	style "kaisen-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport"	style "kaisen-notebook"
