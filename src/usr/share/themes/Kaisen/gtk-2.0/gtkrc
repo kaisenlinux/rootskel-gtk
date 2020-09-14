@@ -22,28 +22,28 @@ style "kaisen-default"
 	ythickness = 1
 
 	fg[NORMAL]		= "#B5B3AC" # Couleur texte non modifiable gris/blanc (boutons et textes)
-	fg[PRELIGHT]		= "#EC0101" # Couleur scrolling barre rouge et présélection (Kaisen-Dark-Material)
+	fg[PRELIGHT]		= "#8F1715" # Couleur scrolling barre rouge et présélection (Kaisen-Official)
 	fg[SELECTED]		= "#0E0E10" # Couleur gris/noire sur champ d'écriture
-	fg[ACTIVE]		= "#8F1715" # Couleur rouge de surbrillance (appui sur tab, rouge Kaisen-Dark-Material)
+	fg[ACTIVE]		= "#8F1715" # Couleur rouge de surbrillance (appui sur tab, rouge Kaisen-Official)
 	fg[INSENSITIVE]		= "#0E0E10" # Couleur gris/noir sur champ de sélection (champ de sélection de langue)
 
 	bg[NORMAL]		= "#0E0E10" # Couleur de fond grise/noire
-	bg[PRELIGHT]		= "#EC0101" # Couleur rouge barre progression rouge (Kaisen-Dark-Material)
+	bg[PRELIGHT]		= "#8F1715" # Couleur rouge barre progression rouge (Kaisen-Official)
 	bg[SELECTED]		= "#8F1715" # Couleur de sélection de texte rouge (Kaisen-Official)
 	bg[INSENSITIVE]		= "#8F1715" # Couleur bordure champ d'écriture rouge (Kaisen-Official)
-	bg[ACTIVE]		= "#0E0E10" # Couleur active de fond grise/noire
+	bg[ACTIVE]		= "#000000" # Couleur sur champs actifs de fond noire
 
-	base[NORMAL]		= "#0E0E10" # Couleur grise/noire pour champs de sélection (champ de langue par exemple)
-	base[PRELIGHT]		= "#B5B3AC" # Couleur gris/blanc
-	base[ACTIVE]		= "#EC0101" # Elément activé couleur rouge (Kaisen-Dark-Material)
+	base[NORMAL]		= "#000000" # Couleur noire pour champs de sélection (champ de langue par exemple)
+	base[PRELIGHT]		= "#000000" # Couleur noire surbrillance carré (souris sur bouton)
+	base[ACTIVE]		= "#EC0101" # Elément activé (surbrillance) couleur rouge (Kaisen-Dark-Material)
 	base[SELECTED]		= "#8F1715" # Barre sélection couleur rouge (Kaisen-Official)
-	base[INSENSITIVE]	= "#0E0E10" # Couleur gris/noir éléments non modifiables
+	base[INSENSITIVE]	= "#000000" # Couleur noire éléments non modifiables
 
 	text[NORMAL]		= "#B5B3AC" # Fond couleur gris/blanc sur menus sélectionnables 
 	text[PRELIGHT]		= "#B5B3AC" # Texte couleur gris/blanc
-	text[ACTIVE]		= "#B5B3AC" # Texte couleur gris/blanc
+	text[ACTIVE]		= "#0E0E10" # Texte couleur gris/noire sur texte en surbrillance
 	text[SELECTED]		= "#0E0E10" # Texte couleur noir/gris partie choix de la langue
-	text[INSENSITIVE]	= "#B5B3AC" # Texte blanc/gris
+	text[INSENSITIVE]	= "#B5B3AC" # Texte couleur gris/blanc
 
 	engine "kaisen"
 	{
