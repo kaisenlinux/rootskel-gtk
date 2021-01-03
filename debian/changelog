@@ -1,3 +1,24 @@
+rootskel-gtk (1.42+kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisen-linux.org>  Sun, 03 Jan 2020 01:34:17 +0200
+
+rootskel-gtk (1.42) unstable; urgency=medium
+
+  [ Cyril Brulebois ]
+  * Remove Christian Perrier from Uploaders, with many thanks for all
+    his contributions over the years! (Closes: #927547)
+
+  [ Jonathan Carter ]
+  * Update to debhelper-compat (=13)
+  * Declare standards version 4.5.1
+  * Declare Rules-Requires-Root: no
+  * Change copyright file to machine readable format
+  * Update to Homeworld theme for Debian 11
+
+ -- Jonathan Carter <jcc@debian.org>  Sat, 19 Dec 2020 15:43:01 +0200
+
 rootskel-gtk (1.41+kaisen3) kaisen-packages; urgency=medium
 
   * Remove Tobas banner (thanks my friend) because EFI malformed banner.
@@ -20,7 +41,7 @@ rootskel-gtk (1.41+kaisen1) kaisen-devel; urgency=medium
 rootskel-gtk (1.41) unstable; urgency=medium
 
   * Update png files for futureprototype theme
-  * Update gtkrc for futureprorotype colours
+  * Update gtkrc for futureprototype colours
   * debian/control:
     - Drop versioned dependency on dpkg-dev
     - Add self to uploaders
