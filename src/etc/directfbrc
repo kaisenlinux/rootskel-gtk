@@ -1,6 +1,6 @@
 quiet
 no-hardware
-bg-color=8F1715
+bg-color=ffdcdad5
 screenshot-dir=/var/log
 #disable-module=linux_input
 #disable-module=keyboard

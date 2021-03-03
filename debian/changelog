@@ -1,3 +1,15 @@
+rootskel-gtk (11.0.1+kaisen1) kaisen-packages; urgency=medium
+
+  * Import new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 03 Mar 2021 06:10:17 +0200
+
+rootskel-gtk (11.0.1) unstable; urgency=medium
+
+  * Fix colour in GTK theme
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 15 Feb 2021 20:21:48 +0200
+
 rootskel-gtk (1.42+kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release
