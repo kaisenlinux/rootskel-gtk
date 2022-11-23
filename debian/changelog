@@ -1,3 +1,18 @@
+rootskel-gtk (11.0.2+kaisen1) kaisen-packages; urgency=medium
+
+  * Import the new upstream release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 22 Nov 2022 16:43:39 +0200
+
+rootskel-gtk (11.0.2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Samuel Thibault ]
+  * Make gbp produce the right tag format.
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 21 Aug 2022 18:48:38 +0200
+
 rootskel-gtk (11.0.1+kaisen1) kaisen-packages; urgency=medium
 
   * Import new upstream release
